@@ -12,7 +12,7 @@
 
 .logo img{
     width: 35%;
-    border: 1px solid rgb(74, 62, 66);
+    border: 1px solid rgb(35, 35, 35);
     border-radius: 150px
     
 }
@@ -23,6 +23,8 @@
     justify-content: center;
     position: sticky;
     top: 0;
+    height: 50px;
+    background-color: rgb(35, 26, 26);
 }
 
 .nav-list{
@@ -61,8 +63,14 @@
 }
 
 .background{
-    background: rgb(0, 0, 0.7) url('../img/bg.jpg');
+    background: rgb(0, 0, 0.7) url('../img/bg.png');
     background-size: cover;
+    background-blend-mode: dark;
+}
+
+.navbarBg{
+    background: rgb(0 0 0.7);
+    background-size: large;
     background-blend-mode: dark;
 }
 
@@ -73,7 +81,7 @@
 .box-main{
     max-width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -168,4 +176,9 @@ xdform h3{
     font-weight: 500;
     line-height: 42px;
     text-align: center;
+}
+
+
+@media screen() {
+    
 }
