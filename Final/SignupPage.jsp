@@ -55,7 +55,7 @@
 
 
                 </div>
-                <form action="Login" method="post" class="homepageSignup">
+                <form action="LoginPage.jsp" method="post" class="homepageSignup">
                     
                     <div class="social">
                         Already have an account?
