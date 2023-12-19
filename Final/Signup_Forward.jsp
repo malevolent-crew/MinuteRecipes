@@ -102,11 +102,11 @@
                     <h1> <%= message %> </h1>
 
                 </div>
-                <form action="Login" method="post" class="homepageSignup">
+                <form action="LoginPage.jsp" method="post" class="homepageSignup">
                     
                     <div class="social">
                         Already have an account?
-                    <button type=Submit class="btn" value="login">Sign in</button><br>
+                    <button type=Submit class="btn" value="login">Login in</button><br>
                     
                     </div>
                 </form>
