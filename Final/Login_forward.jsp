@@ -78,7 +78,6 @@
 
 
                 <form action="Login_forward.jsp" method="post" class="homepageSignup">
-                    <h3>Login Here</h3>
 
                     <label for="username">Email</label>
                     <br>
