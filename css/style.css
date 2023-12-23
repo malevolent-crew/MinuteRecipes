@@ -22,16 +22,20 @@
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: 0;
-    height: 50px;
-    background-color: rgb(35, 26, 26);
+    top: 10;
+    height: 72px;
+    background-color: #201e1e;
+    font-family: Roboto;
+} 
+.logintitle{
+    font-size: 35px;
 }
 
-.homepageSignupalp{
-    /* float: left; */
-    height:50% ;
-    width: 25%;
-    background-color: rgba(255,255,255,0.13);
+
+
+.loginpageform{
+    height:55%;
+    background-color: rgba(71, 130, 146, 0.13);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -42,75 +46,54 @@
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;   
     position: fixed;
+    font-family: Roboto;
+    margin: 30px;
+    padding: 120px; 
 }
 
-.homepageSignupalpsin{
-    /* float: left; */
-    height: 55%;
-    width: 25%;
-    background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;   
-    position: fixed;
-}
-
-.homepageSignupalpcasin{
+.loginpageformcasin{
     
     height:0%;
     width: 70%;
     background-color: rgba(255,255,255,0.13);
     position:fixed;
     transform: translate(-50%,-50%);
-    top: 65%;
-    left: 73%;
-    /* border-radius: 0px; */
-    /* backdrop-filter: blur(10px); */
-    /* border: 2px solid rgba(255,255,255,0.1); */
-    /* box-shadow: 0 0 40px rgba(8,7,16,0.6); */
-    /* padding: 50px 35px;    */
-    /* position: fixed; */
+    top: 70%;
 }
 
-.homepageSignupalpca{
+.loginpageformca{
     
     height:0%;
     width: 70%;
     background-color: rgba(255,255,255,0.13);
     position:fixed;
     transform: translate(-50%,-50%);
-    top: 60%;
-    left: 73%;
-    /* border-radius: 0px; */
-    /* backdrop-filter: blur(10px); */
-    /* border: 2px solid rgba(255,255,255,0.1); */
-    /* box-shadow: 0 0 40px rgba(8,7,16,0.6); */
-    /* padding: 50px 35px;    */
-    /* position: fixed; */
+    top: 72%;
+    left: 74.5%;
+    font-family: Roboto;
 }
 
-/* .toleft{
-    float: right;
-    position:absolute;
-    padding: 50px 35px ;
-    float: right;
-    text-align-last:center;
+.login_font{
+    font-size: 120%;
+    text-align: left;
+}
+
+.login_font3{
+    font-size: 120%;
+    text-align: left;
+}
 
 
+.login_font2{
+    font-size: 70%;
+}
 
-
-} */
 
 .foot{
     height: 50px;
-    background-color:  rgb(35, 26, 26);
-    color: wheat;
+    background-color:#201e1e;
+    color: rgb(231, 211, 174);
+    font-family: monospace;
 }
 
 .nav-list{
@@ -150,14 +133,14 @@
 
 .background{
     
-    background: rgb(0, 0, 0.7) url('../img/vegetables-set-left-black-slate.jpg');
-    background-size: cover;
+    background: rgb(0, 0, 0.7) url('../img/bg.png');
+    background-size:cover;
     background-blend-mode: dark;
     
 }
 
 .navbarBg{
-    background: rgb(0 0 0.7);
+    background: rgb(47, 47, 52);
     background-size: large;
     background-blend-mode: dark;
 }
@@ -186,8 +169,22 @@
 
 .social{
     text-align: left;
-    top:30px;
+    top:50px;
+    padding-top: 4.5%;
+    align-items: center;
+    font-size: 20px;
 }
+
+
+.social2{
+    text-align: bottom;
+    top:50px;
+    padding-top: 6%;
+    padding-left: 20%;
+    align-items: end;
+    
+}
+
 
 .secondhalf{
     width: 30%;
@@ -195,7 +192,6 @@
 
 .secondhalf img{
     width: 70%;
-    /* padding: 4px; */
     border: 4px solid rgb(81, 65, 72);
     border-radius: 150px;
     display: block;
@@ -204,11 +200,13 @@
 
 .text-big{
     font-size: 50px;
+    font-family:Roboto;
 
 }
 .inputr{
-    border-radius: 15px;
-    height: 22px;
+    border-radius: 20px;
+    height: 20px;
+    width: 80%;
 }
 
 .text-small{
@@ -216,7 +214,8 @@
 }
 
 .btn{
-    padding:15px 30px ;
+    padding-top: 20%;
+    padding:10px 30px ;
     margin: 7px 3px;
     border: 2px solid rgb(135, 133, 134); 
     border-radius: 8px;
@@ -225,10 +224,13 @@
     cursor: pointer;
     font-size: large;
 }
-.btn-sm{
-    padding: 10px 10;
-    /* top:10%; */
-}
+
+
+/* .btn-sm2{
+    padding: 1px;
+    color: whitesmoke;
+    background-color: #201e1e;
+} */
 
 .sectionSubTag{
     align-items: center;
@@ -241,39 +243,281 @@
     text-decoration: none;
 }
 
-.sectionIngredients{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    justify-content: center;
-    display: flex;
-    max-width: 100%;
+.error{
+    color: rgb(255, 111, 111);
 }
-/* 
-xdform{
-    height: 520px;
-    width: 400px;
+
+.history{
+    height:63% ;
+    width: 40%;
     background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 74%;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;   
+    position: fixed;
+}
+
+.profile-container {
+    height:22.5%;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.13);
+    transform: translate(-50%,-50%);
+    top: 25%;
+    left: 17%;
+    border-radius: 10px;
+    backdrop-filter: blur(100px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    position:fixed;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    color: #3367d6;
+}
+
+
+
+.profile-updates {
+    margin-top: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+button {
+    background-color: #4285F4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    color: #3367d6;
+}
+
+
+.wishlist{
+    text-align: center;
+    font-size: 250%;
+    color: black;
+}
+
+
+.recepie{
+    height: 70%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.13);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
-}
-xdform *{
-    font-family: 'Poppins',sans-serif;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    outline: none;
-    border: none;
-}
-xdform h3{
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 42px;
-    text-align: center;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+     padding: 50px 35px;
+    position:fixed;
 }
 
+.add_right{
+    height: 54%;
+    width: 44%;
+    background-color: rgba(0, 0, 0, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 52%;
+    left: 75%;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+     padding: 50px 35px;
+    position:fixed;
+
+}
+
+.add_left{
+    height: 54%;
+    width: 44%;
+    background-color: rgba(0, 0, 0, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 52%;
+    left: 25%;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    padding: 50px 35px;
+    position:fixed;
+
+}
+
+
+.add_font{
+    height: 7%;
+    width: 18%;
+    font-size: 190%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 12%;
+    left: 50%;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    position:fixed;
+}
+
+.add_steps{
+    border-radius: 10px;
+    height: 90%;
+    width: 96%;
+}
+
+.add_recepie{
+    border-radius: 10px;
+    height: 4%;
+    width: 90%;
+}
+
+.add_ingredients{
+    border-radius: 10px;
+    height: 50%;
+    width: 92%;
+}
+
+.add_button{
+    padding-top: 20%;
+    padding:10px 30px ;
+    margin: 7px 3px;
+    height: 5%;
+    width: 10;
+    font-size: 190%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: rgb(244, 244, 244);
+    background: transparent;
+    border: 2px solid rgb(234, 159, 196); 
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: large;
+    top: 89%;
+    left: 50%;
+    position:fixed;
+}
+
+/* HOME PAGE INGREDIENTS SELECTION SECTION */
+
+.ingredientsection{
+    width: 90%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .container{
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.container .ingredients{
+    width: 300px;
+    position: relative;
+    height: 400px;
+    background: #f0f0f0;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0.5px 10ps #e6e6e6;
+    transition:0.3s ease-in-out;
+} */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: rgb(23, 22, 22);
+    color:whitesmoke;
+}
+.subcont{
+    height: 370px;
+    width: 335px;
+    background: #333;
+    margin: 60px 30px;
+    text-align: left;
+    float: left;
+    border: solid rgb(32, 31, 30);
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+.ingthings{
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 60px;
+}
+
+.chkbx{
+    padding: 30px;
+    margin: 10px 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+.selectIng{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    max-width: 100%;
+}
+.ingtitle{
+    align-items: center;
+    text-align:center;
+}
