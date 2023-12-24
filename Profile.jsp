@@ -1,3 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +24,7 @@
     <nav class="navbar">
         <ul class="nav-list">
             <div class="logo"><img src="img/logo.jpeg" alt="logo"></div>
-            <li> <a href="HomePage.html">
+            <li> <a href="HomePage.jsp">
                     <h2> Home</h2>
                 </a> </li>
             <li> <a href="#contact">
