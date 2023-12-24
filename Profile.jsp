@@ -20,6 +20,75 @@
     </style>
 </head>
 
+<%! String message = "";
+    String name;
+    String email;
+    String cookie_data;
+ %>
+
+<%
+
+try{
+                response.setContentType("text/html");
+
+                Cookie[] cookies = request.getCookies();      
+                //out.println(cookies);
+                
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/minute_recipe", "root", "toor");
+
+                //out.println(cookies);
+
+                if(cookies != null){
+                    for(Cookie c : cookies){
+                        if(c.getName().equals("name"))
+				            cookie_data = c.getValue();
+                            //out.println(cookie_data);
+
+
+                            try{
+                                
+                                cookie_data = cookie_data.substring(0, cookie_data.length() - 5);
+                                email = cookie_data;
+
+                                PreparedStatement ps1 = connection.prepareStatement("select user_name from login_info where email=?");
+                                ps1.setString(1, email);
+                                ResultSet result1 = ps1.executeQuery();
+                                
+                                if(result1.next() == true){
+                                    name = result1.getString("user_name");
+                                }
+
+                                else{
+                                    //out.println("blank");
+                                }
+                                
+                                
+                            }
+                            catch(Exception a){
+                                //out.println(a);
+                            }
+
+                    }
+                }
+
+}
+
+
+
+catch(Exception e){
+    message = "Error";
+}
+
+ %>
+
+
+
+
+
+
+
+
 <body>
     <nav class="navbar">
         <ul class="nav-list">
@@ -47,9 +116,9 @@
                         <img src="img/user.png" alt="Profile Picture" class="profile-picture">
                         <div class="profile-info">
                             
-                            <h4>User Name : @Not_Void</h4>
+                            <h4>User Name : <% out.println(name); %></h4>
                             <br>
-                            <p>Email: anujyadav9723.com</p>
+                            <p>Email: <% out.println(email); %></p>
                         </div>
                     </div>
 
