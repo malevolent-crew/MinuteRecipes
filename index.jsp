@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MinuteRecipes - Making Recipe according to your ingredients</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>MinuteRecipe - Making Recipe according to your ingredients</title>
+    <link rel="stylesheet" href="css\style.css">
     <style>
         body {
         font-family: courier, serif;
         }
+            /* .navbar{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: sticky;
+                top: 10;
+                height: 80px;
+                background-color: rgb(32, 30, 30);
+            } */
+
     </style>
 </head>
 <body>
@@ -22,12 +32,12 @@
             <!-- <input type="text" name="search" id="search">
             <button class="btn btn-sm">Search</button> -->
         </div>
-     </nav>
+    </nav>
 
     <section class="background firstSection">
         <div class="box-main">
             <div class="firsthalf">
-                <p class="text-big">Minute Recipe's</p>
+                <p class="text-big">Minute Recipe</p>
                 <!-- <p class="text-small"></p> -->
                 <br>
             <div class="buttons">
@@ -41,7 +51,7 @@
         <div class="foot">
             <center>
                 <br>
-        <p>&copy; 2023 Minute Recipe's. All rights reserved. Design : Malevolent's Team</p>
+        <p>&copy; 2023 Minute Recipe.. All rights reserved - Team Maleveolent</p>
     
 </div>
         </center>
