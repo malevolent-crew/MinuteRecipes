@@ -68,7 +68,6 @@
                                 cookie_data = cookie_data.substring(0, cookie_data.length() - 5);
                                 //out.println(cookie_data);
                                 email = cookie_data;
-                                //out.println(email);
 
                                 PreparedStatement ps1 = connection.prepareStatement("select password from login_info where email=?");
                                 ps1.setString(1, email);
@@ -76,14 +75,10 @@
                                 
                                 if(result1.next() == true){
                                     password = result1.getString("password");
-                                    //out.println(email);
-                                    //out.println(password);
-                                    //out.println("Hello");
                                 }
 
                                 else{
-                                    email = request.getParameter("email");
-                                    password = request.getParameter("password");
+                                    //out.println("blank");
                                 }
                                 
                                 
@@ -102,7 +97,6 @@
                     }
 
                 else{
-                    //out.println("Hello");
                     if(email != null && password != null){
 
                     PreparedStatement ps = connection.prepareStatement("select email from login_info where email=? and password=?");
@@ -116,6 +110,7 @@
                     if (result.next()) {
                         Random random = new Random();
                         int random_num = random.nextInt(11111, 99999);
+
                         cookie_data = result.getString("email") + String.valueOf(random_num);
                         Cookie cookie = new Cookie("name", cookie_data);
                         response.addCookie(cookie);
@@ -134,25 +129,24 @@
                     }
 
                 }
-                //out.println("Hello2");
 
             }
             catch(Exception ex){
-            	 message = "Error connecting website";
+            	String message = "Error connecting website";
             }
       
             %>
 
 
             <div class="toleft">
-                <form action="LoginPage.jsp" method="post"  ><%-- class="loginpageform"> --%>
+                <form action="LoginPage.jsp" method="post" class="loginpageform">
                 <font class="login_font">
                     
                     <center><p class="formstitle">Sign in</p></center>
                     <br>
                     <div class="epaspos">
                     <label for="username">Email</label><br>
-                    <input type="text" placeholder=" Email" name="email" id="username" class="inputr" required>
+                    <input type="text" placeholder="Email" name="email" id="email" class="inputr" required>
                     <br><br>
                     
                     <label for="password">Password</label><br>
