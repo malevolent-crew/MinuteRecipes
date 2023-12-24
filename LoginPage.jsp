@@ -138,7 +138,7 @@
 
             }
             catch(Exception ex){
-            	String message = "Error connecting website";
+            	 message = "Error connecting website";
             }
       
             %>
