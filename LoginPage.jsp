@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MinuteRecipes - Login</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
           rel="stylesheet">
     <style>
         body {
@@ -20,17 +20,17 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <ul class="nav-list">
         <div class="logo"><img src="img/logo.jpeg" alt="logo"></div>
            <li> <a href="#home"><h2> Home</h2></a> </li>
            <li> <a href="#contact"><h2>Contact Us</h2></a> </li>
-        </ul>
-        <div class="rightNav">
-            <!--<input type=""text" name="search" id="search">
-            <button class="btn btn-sm">Search</button>-->
+        </ul> -->
+        <!-- <div class="rightNav">
+            <input type=""text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
         </div>
-     </nav>
+     </nav> -->
 
     <section class="background firstSection">
         <div class="box-main">
@@ -142,7 +142,7 @@
                 <form action="LoginPage.jsp" method="post" class="loginpageform">
                 <font class="login_font">
                     
-                    <center><p class="logintitle">Sign in</p></center>
+                    <center><p class="formstitle">Sign in</p></center>
                     <br>
                     <div class="epaspos">
                     <label for="username">Email</label><br>
@@ -174,12 +174,9 @@
 
                 </form>
             </div>
-
-                
-
                 </div>
                 <form action="SignupPage.jsp" method="post" class="loginpageformca">
-                <font class="login_font2">
+                <font class="formbottomfont">
                         <div class="social">
                             Don't have a Account?
                             <button type=Submit class="btn" value="Signup">Create Account</button><br>
@@ -187,15 +184,11 @@
                         </font>
                     </form>
 
-
-
-
-
                 </div>
 
             </div>
     </section>
-    <footer>
+    <!-- <footer>
         <div class="foot">
             <center>
                 <br>
@@ -203,6 +196,6 @@
     </center>
 </div>
         </center>
-      </footer>
+      </footer> -->
     </body>
 </html>
