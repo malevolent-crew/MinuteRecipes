@@ -38,7 +38,9 @@
                 <br>
             <div class="buttons">
 
-            <%! String message = ""; %>
+            <%! String message = "";
+                String message2 = "";   
+             %>
 
             <%
                 try{
@@ -53,7 +55,8 @@
 
                     if(email != null && password != null && name != null){
                             if(name.contains(";") || email.contains(";") || password.contains(";") || name.contains(" ") || email.contains("@") == Boolean.FALSE || email.contains(" ")){
-                            message = "Invalid Input";
+                            message = "Invalid Input2";
+                            message2 = "No space allowed";
                         }
                         
 
@@ -105,11 +108,11 @@
                 <font class="login_font">
                     <label for="username">Username</label>
                     <input type="text" placeholder=" Username" name="username" id="username" class="inputr" required>
-                    <font class="error"><h6>No space allowed</h6></font>
+                    <font class="error"><h6><%= message2 %></h6></font>
                         <br>
 
                         <label for="username">Email</label>
-                        <input type="text" placeholder=" Email" name=" email" id="email" class="inputr" required><br><br>
+                        <input type="text" placeholder="Email" name="email" id="email" class="inputr" required><br><br>
                         <label for="password">Password</label>
                         <input type="password" placeholder=" Password" name="password" id="password" class="inputr" required>
                         <font class="error"><h6><%= message %></h6>
