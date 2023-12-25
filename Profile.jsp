@@ -48,15 +48,18 @@ try{
 
                             try{
                                 
-                                cookie_data = cookie_data.substring(0, cookie_data.length() - 5);
+                                cookie_data = cookie_data.substring(0, cookie_data.length()-5);
                                 email = cookie_data;
+                                //out.println(cookie_data);
 
                                 PreparedStatement ps1 = connection.prepareStatement("select user_name from login_info where email=?");
                                 ps1.setString(1, email);
                                 ResultSet result1 = ps1.executeQuery();
                                 
+                                
                                 if(result1.next() == true){
                                     name = result1.getString("user_name");
+                                    break;
                                 }
 
                                 else{
@@ -102,11 +105,13 @@ catch(Exception e){
             <!-- <img src="img/magnify.png" alt="logoacc" class="logoacc"> -->
         </ul>
         <div class="rightNav">
-            <!-- <a href="/"><img src="img/magnify.png" alt="logoacc" class="logoacc"></a>
-            <input type="text" name="search" id="search">
-            <button class="btn btn-sm">Search</button> -->
+            <!--<input type=""text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>-->
+                <form action="Delete_cookies.jsp" method="post" class="delete_cookie">
+                            <button class="btn2">Log out</button>
+                </form>
         </div>
-    </nav>
+     </nav>
 
     <section class="background firstSection">
         <div class="box-main">
