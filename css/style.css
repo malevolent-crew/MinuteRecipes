@@ -610,4 +610,15 @@ button:hover {
     align-items: center;
     text-align:center;
 }
-        
+
+.delete_cookie{
+    padding-left: 86%;
+}
+
+.btn2{
+    border: 2px solid rgb(135, 133, 134); 
+    border-radius: 8px;
+    background: transparent;
+    color: rgb(244, 244, 244);
+    cursor: pointer;
+}
